@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            font-style: normal;
+            line-height: 30px;
+        }
+        h1{
+            color: maroon;
+            background-color: beige;
+            /*border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border: black solid 3px;
+            border-radius: 20px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;*/
+            border-top: black solid 4px;
+            width: 250px;
+        }
+        span{
+            color: maroon;
+            background-color: beige;
+            border: black solid 4px;
+            width: 250px;
+        }
+        #firstPara{
+             background-color: aquamarine;
+             color: blueviolet;
+             padding: 50px;  /*Padding used for add space inside the box on any side*/
+             margin: 50px;   /*margin is used for add space outside the box on any side*/
+              
+
+        }
+        #secondPara{
+            background-color: rgb(37, 154, 41);
+            padding: 70px;
+        }
+        #thirdPara{
+            background-color: rgba(83, 93, 153, 0.56);
+            margin: 70px;
+        }
+        .paraClass{
+           
+            background-color: #c944c9;
+            
+        }
+        #fourthPara{
+            background-color: hsl(55, 56%, 54%);
+        }
+        img{
+            margin: 10px;
+        }
+        .container{
+            border: 2px solid blue;
+        }
+        /* .image1{
+            position: absolute;
+           
+        }
+        .image2{
+            position: relative;
+            top: 400px;
+            left: 200px;
+        }*/
+        .image3{
+            position: sticky;
+            top: 1000px;
+        }
+        /*.image4{
+            position: fixed;
+        }*/
+        #firstimage{
+            float: right;
+        }
+        #secondimage{
+            float:right;
+            clear: right;
+        }
+        #XYZ{
+            border: 2px solid black;
+            width: 1000px;
+            height: 600px;
+            /*overflow: hidden;*/
+            /*overflow: visible;*/
+           /*overflow: scroll;*/
+           overflow: auto;
+        }
+        .container2{
+            background-color: beige;
+            border: 5px solid rgb(109, 23, 109);
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            flex-direction: row;
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: wrap;*/
+            height: 500px;
+            /*justify-content: center;*/
+            /*justify-content: space-between;*/
+            justify-content: baseline;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+           
+        }
+        #box1{
+            background-color: aqua;
+            order: 2; 
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+            order: -1;
+        }
+        #box4{
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Welcome To Pune</h1>
+
+    <span>I am learning Web Development</span>
+
+    <p id="firstPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo iusto blanditiis alias nemo quas quae possimus provident nobis reiciendis quidem.</p>
+
+    <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo repudiandae suscipit maxime laborum recusandae non quisquam est ad! Ut perferendis quaerat magni deleniti tempore dolores voluptas nesciunt. Ab, id quod culpa cupiditate placeat rerum tempora nostrum, qui corrupti, reiciendis odit inventore eos et. Natus amet iste voluptatum placeat sapiente?</p>
+
+    <p id="thirdPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis iste magnam maiores obcaecati, voluptatum doloribus tempora deleniti in temporibus voluptates harum a ad, nulla incidunt, odio asperiores repudiandae pariatur veniam impedit voluptatem molestias esse. Eos?</p>
+
+    <p class="paraClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis quidem explicabo fuga, corrupti sit porro.</p>
+
+    <p id="fourthPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolor dignissimos distinctio ad molestias exercitationem quos fugiat atque, velit totam ratione amet fugit, beatae eos ut voluptatibus repudiandae, magni natus non et? Ex quisquam assumenda libero facere sit aut, modi error perspiciatis commodi aliquam provident?</p>
+    <hr>
+    <div class="container">
+        <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_f-3Npwnj40B6u8O8WmcX8swxRqUS8ncQg&usqp=CAU" alt="first" height="300px" width="300px">
+        <img class="image2"  src="https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=" alt="second" height="300px" width="300px">
+        <img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXwlsS9rGAxwgMvS-q6AjyH8sTSeAOJieaQ&usqp=CAU" alt="third" height="300px" width="300px">
+        <img class="image4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vWb7p-dN0y8P1ebH2gVosl64r-CGWc3FBg&usqp=CAU" alt="fourth" height="300px" width="300px">
+    </div>
+    <div class="container1"> 
+        <img id="firstimage" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/j/r/l/medium-chatrapati-shivaji-maharaj-poster-big-size-sparkle-coated-original-imagn4z4bz2ffg3m.jpeg?q=20" alt="Chatrapati Shivaji Maharaj" width="300px" height="300px">
+        
+        <img id="secondimage" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/j/r/l/medium-chatrapati-shivaji-maharaj-poster-big-size-sparkle-coated-original-imagn4z4bz2ffg3m.jpeg?q=20" alt="Chatrapati Shivaji Maharaj" width="300px" height="300px">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias accusamus aspernatur corporis praesentium, omnis unde voluptatum! Voluptatem, tenetur. Ex reiciendis vitae quis possimus architecto officiis expedita eaque recusandae iste rerum, dolorem quisquam ducimus fuga exercitationem maxime aut numquam dolorum accusantium illum rem soluta, nemo nulla aperiam? Quibusdam id nostrum incidunt accusamus vel explicabo, vero iusto perferendis fugit eveniet debitis vitae. Omnis odio obcaecati voluptas sequi hic tenetur et excepturi, voluptatem illo, asperiores laboriosam, dolorum iusto porro soluta. Maiores non nobis vero minima architecto, consequuntur dolores similique consequatur facere ipsa obcaecati repellendus suscipit quia, voluptatum praesentium officiis, blanditiis maxime ea recusandae cupiditate perferendis? Unde aliquam ut quo, dolor amet ipsum eum debitis dignissimos iure similique vero nam velit nisi ullam error, harum fugiat aliquid explicabo obcaecati quis nulla dicta expedita deserunt! In similique voluptate sed error impedit omnis tempore, quos voluptates excepturi a fugiat quia amet? Eos, esse? Animi ratione velit quaerat nobis, iusto doloremque voluptates quasi earum eum, repellendus neque voluptatibus exercitationem eligendi id ad? Sed sit pariatur quo, neque accusantium saepe quis, expedita nihil odio dolores nesciunt! Voluptatum fugit, sunt reprehenderit quod natus saepe? Esse commodi similique, nam consequatur tenetur, veritatis, quos vero ea dicta voluptatem odit repellendus minima! Tempora sint maiores dicta ipsum omnis doloremque reprehenderit modi ex recusandae sequi, assumenda magnam dignissimos. Tenetur laudantium nisi ad eum vero velit error quos exercitationem illum voluptatum iusto omnis ab, sequi provident natus temporibus similique quidem libero voluptatem, illo delectus in vitae harum. In, architecto! Consectetur necessitatibus ducimus, dolore earum magni, illo eaque rem minima laudantium quibusdam harum excepturi odit nemo incidunt ex numquam vitae qui reiciendis? Minus, quaerat incidunt? Quisquam, a odio neque, tempora corporis, omnis inventore fugit cumque tempore amet velit minima iste. Dolores rerum expedita officia, repudiandae esse perspiciatis. Tempore iste illo debitis at dolores alias nihil eos, eligendi in beatae dignissimos distinctio exercitationem nisi magnam nobis, quae impedit cupiditate commodi unde dolorem, illum officia ratione sint repudiandae! Minima quos incidunt tenetur officiis nisi quibusdam neque corrupti reprehenderit labore. Aut alias iusto impedit officiis vitae inventore, repellat eligendi distinctio enim aspernatur. Voluptates reiciendis aliquam blanditiis ea impedit quos modi nostrum suscipit cum, aut officia illo quaerat at nemo ipsa consectetur culpa accusantium laboriosam perferendis dolores facere ipsum architecto. Similique in molestiae inventore dolores, harum quas officia rem architecto animi tempore odio incidunt omnis. Rerum, aspernatur harum similique repellat eveniet, alias adipisci quibusdam repudiandae possimus dignissimos nesciunt. Amet minus porro, incidunt expedita sint, aperiam soluta odio consequatur quibusdam eveniet ex. Odio tenetur eaque vel provident numquam cum labore ut deserunt, qui quae voluptatibus odit fugit a eum iste eligendi molestiae placeat? Reprehenderit soluta natus dolores illo inventore, praesentium omnis amet maiores tempora! Fuga facere quaerat doloribus perferendis, veritatis mollitia, odio sunt velit quae illo fugit doloremque obcaecati? Libero, veritatis consequuntur ad aperiam doloremque nisi at adipisci odit nam omnis hic nostrum ducimus neque et excepturi, quod exercitationem accusamus. Soluta repudiandae, quod veritatis eaque expedita itaque doloribus consequatur rerum provident impedit autem recusandae? Dolore dicta possimus eveniet eligendi incidunt?</p>
+    </div>
+    <hr>
+    <div>
+        <p id="XYZ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum doloremque unde quos incidunt voluptatibus vel, tempore cum saepe laboriosam, quis necessitatibus! Consequatur unde odio veniam iste. Quaerat, aut neque? Sit ad atque beatae ipsam, consequuntur accusantium natus possimus enim debitis officia. Illum error obcaecati omnis minus quaerat pariatur necessitatibus, incidunt distinctio cumque ea veritatis dolores repellendus? Sed perferendis laudantium, numquam quisquam labore ea dolorem illo quae voluptatem aperiam similique eius ipsa iusto? Minus placeat nesciunt exercitationem expedita enim recusandae cupiditate fugit autem aut quis eligendi laborum amet, architecto ipsam praesentium! Sunt quisquam atque iusto ipsum facilis magni magnam soluta, rem vel illo dolores molestiae, nisi non. Sit deleniti ipsa, sapiente aperiam eaque, neque iure obcaecati ex fugit impedit quam magnam enim fugiat quasi nam quia culpa error ab blanditiis tempora? Nobis dolore sequi sed, deserunt unde veniam quisquam? Harum, ad sequi minus beatae debitis nisi ratione maiores dolores soluta, voluptatem nostrum neque eveniet quos alias hic blanditiis, accusamus sit cum. Consequuntur repudiandae rem quis vitae temporibus perspiciatis dolore doloribus animi quaerat reiciendis a placeat corrupti nulla, laborum asperiores non delectus nihil commodi, magni esse voluptates at aut culpa qui! Reprehenderit omnis accusantium facilis, eius corrupti illum dolor excepturi adipisci sequi minus tempore, deserunt cum id repudiandae similique nostrum quia, dolorum enim. Incidunt, perspiciatis quam? Eos nostrum earum, odit optio necessitatibus blanditiis consequatur perspiciatis eveniet esse facilis hic error, suscipit reprehenderit fugiat quam? Architecto, exercitationem et dicta ut blanditiis quae magnam harum! Vitae repudiandae dolores natus, corrupti nostrum facilis tempore quidem odit aliquid, quae suscipit accusamus ipsum blanditiis rem amet! Quas, quasi consectetur beatae odio labore iusto aspernatur assumenda ducimus dignissimos atque rem, esse doloribus dolor facilis? Quod, repudiandae quibusdam dolore fuga reiciendis numquam unde id fugit recusandae saepe iure sapiente iusto nihil? Quisquam deleniti quod ut voluptates vel ratione odit unde! Maiores ea expedita necessitatibus in odio vero nisi nesciunt enim a. Aut, deleniti facere. Sit laborum quaerat non totam delectus necessitatibus nam, deleniti nisi, quasi architecto molestias suscipit provident corrupti cupiditate voluptates voluptate minus quis. Ipsa porro deleniti nemo ad iusto? Laudantium iste eius similique. Mollitia magni, laboriosam veritatis quidem voluptatum quae nihil omnis! Accusamus molestiae eum dignissimos autem. Eaque recusandae quae itaque vel assumenda quas natus quaerat quo fuga. Iure autem molestiae officiis vero ratione suscipit quod voluptates similique iste, a hic impedit deleniti doloremque quaerat, nesciunt inventore eos unde sed quia. Soluta numquam tenetur eius? Impedit ut sequi iusto at exercitationem accusamus ipsam reprehenderit illo ab officiis maiores rerum, earum odio tenetur nam assumenda voluptatum facilis fugiat, quod, aliquam libero? Inventore est nesciunt laudantium tenetur exercitationem libero a dicta ut veritatis obcaecati incidunt hic ad, sapiente, eum consectetur! Distinctio, blanditiis porro? Nisi explicabo non tempora fugiat voluptatibus officia quod excepturi, numquam ipsum delectus provident sapiente voluptatum aliquam quaerat ratione. Impedit quod in sed vitae, aliquam sequi accusamus. Deserunt, sint harum id distinctio illo voluptate nulla assumenda minus consectetur, numquam laboriosam alias pariatur sed quaerat soluta. Unde, iste. Ab modi rem molestiae quisquam praesentium, deleniti repudiandae qui nobis fugiat unde dolores consequatur id magni voluptas. Corrupti repudiandae amet, asperiores et fugit omnis voluptatibus doloribus rerum quasi quae voluptatum tempora, eveniet incidunt quis a minima porro error. Eos numquam possimus aliquid unde ipsum laboriosam dolorum accusantium quasi laborum placeat ducimus, omnis expedita qui, quae amet quisquam sint veniam! Officiis debitis sed ea, impedit pariatur repellendus incidunt, molestias recusandae quia laboriosam magni nostrum, doloremque culpa dicta eveniet eum quis porro enim eos necessitatibus. Enim quisquam iste amet dolorem itaque vitae id vero similique! Ad amet perspiciatis esse ipsa velit ex nulla, vero doloremque excepturi id quo blanditiis ratione autem voluptatem veritatis sint officiis harum accusantium, exercitationem aut voluptas totam. Quas nihil fugit id enim reiciendis corrupti doloremque nostrum vero quisquam omnis! Ab assumenda cum exercitationem repudiandae fugiat unde quis aliquid laboriosam illum ipsum itaque molestias omnis, doloribus consectetur a consequatur est? Perspiciatis iure consequatur accusamus ea, laborum labore, pariatur cumque ad asperiores dolorem corporis nisi ab voluptas obcaecati recusandae reiciendis quo sequi debitis quia voluptate nihil. Eligendi vitae natus cupiditate expedita eius suscipit error, corporis, ex recusandae laudantium non. Excepturi optio iure, minima earum eaque velit quis quam, dolorum iusto dolorem, consectetur ipsum asperiores recusandae veritatis natus placeat veniam tempora ullam a deserunt? Sed esse, rem deserunt reprehenderit repudiandae, officiis quisquam quam hic error tempore autem vitae voluptates? Sed odio numquam a. Voluptatibus, a labore eligendi laudantium aliquam eaque vitae possimus porro repellendus officia dicta. Neque dignissimos et, magni molestiae inventore asperiores odit explicabo quam? Aliquam, soluta fuga. Voluptates.</p>
+    </div>
+
+    <div class="container2">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+    <br/>
+    <hr>
+    
+</body>
+</html>

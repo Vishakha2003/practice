@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(70, 68, 68);
+            display: grid;
+            gap: 0.4rem;
+            padding: 4rem;
+            border: 2px solid rgb(255, 255, 255);
+            /*row-gap: 1rem;
+            column-gap: 1rem;*/
+            /*grid-template-rows: 100px 100px;
+            grid-template-columns: 100px 100px 100px;*/
+            /*grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);*/
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr); 
+            /*justify-items: end;*/
+            align-items: end;
+
+
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(88, 149, 211);
+            border: 3px solid black;
+            /*justify-self: end;  used for box keep at start, end, centre or stretch position within vertical in the cell*/
+            /*align-self: end;  used for box keep at start, end, centre or stretch position within horizontal in the cell*/   
+            /*place-self: stretch;  used for box keep at start, end, center or stretch position within both vertical and horizontal in the cell*/
+           
+       
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

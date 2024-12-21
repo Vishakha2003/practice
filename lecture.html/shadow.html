@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /*box-shadow: 10px 15px brown;*/  /*for down and right side shadow*/
+            /*box-shadow: -10px -15px brown;*/  /*for top and left side shadow we use minus sign*/
+            /*box-shadow: 10px 15px 15px brown;   for blur shadow effect*/
+            /*box-shadow: 10px 15px 15px 25px brown;  for spread shadow*/
+            /*box-shadow: inset 10px 15px brown;  for inside shadow*/
+            box-shadow: 10px 15px brown, 15px 20px green ;   /*for multiple shadow*/
+        }
+        .image{
+            width: 300px;
+        }
+        h2{
+            /*text-shadow: 5px 5px white;*/
+            /*text-shadow: 5px 5px 1px white;   for blur shadow*/
+            /*text-shadow: 15px 15px 3px;*/
+            text-shadow: 0 0 5px red, 0 0 5px yellow;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container1{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .box1{
+            width: 350px;
+            height: 100px;
+            background-color: palevioletred;
+            border: 3px solid purple;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /*animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            /*animation-direction: alternate;*/
+            /*animation-fill-mode: forwards;*/
+            /*duration | timing fuction | delay | iteration count |  
+             direction | fill mode | play state | name*/
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1350px;
+            }
+        }
+        .box2{
+            width: 350px;
+            height: 100px;
+            background-color: palevioletred;
+            border: 3px solid purple;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement{
+            from{
+                top: 680px;
+                left: 1350px;
+            }
+            to{
+                top: 680px;
+                left: 0px;
+            }
+        }
+        .circle{
+            width:100px;
+            height: 100px;
+            background-color: rgb(135, 167, 32);
+            border: 3px solid rgb(219, 14, 14);
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top:3% ;
+            left:40%;
+            animation: 10s ease-in-out 1s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovement{
+            0%{
+                top: 0%;
+                left: 5%;
+            }
+            30%{
+                top: 0%;
+                left: 90%;
+            }
+            60%{
+                top: 50%;
+                left:1%;
+            }
+            100%{
+                top:50%;
+                left: 90%;
+            }
+        }
+        .box3{
+           height: 100px;
+           width: 400px;
+           background-color: beige;
+           border: 2px solid black;
+           /*transition-property: width;*/
+           /*transition-property: all; 
+           transition-duration: 4s;
+           transition-delay: 1s;
+           transition-timing-function: linear;*/
+
+           /*property | duration | delay | function*/
+            /*transition: all 4s 1s ease-in ;*/
+            transition: width 2s, height 3s;
+        }
+
+        .box3:hover{
+            width: 1200px;
+            height: 800px;
+            background-color: rgb(79, 5, 98);
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 2px solid black;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+             margin: auto;
+            transition: all 2s linear 1s;
+        }
+        .container4{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box4:hover{
+            /*transform: rotate(45deg);*/
+            /*transform: scale(2);*/
+            /*transform: scale(0.5);*/
+            /*transform: skew(45deg);*/
+            transform: translate(500px, 500px);
+        }
+        #firstpara{
+            font-size: 20px;
+            text-shadow: 5px 5px 5px brown;
+        }
+    </style>
+</head>
+<body>
+    /* Shadow */
+    <div class="container">
+        <div class="box">
+            <img class="image" src="project-1287781_640.webp" alt="project">
+            <h2>Welcome to World!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, voluptas. Doloremque ad, impedit consequuntur nesciunt quod mollitia! Nihil eaque corporis saepe impedit, laudantium ratione magni.</p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    /* animation */
+    <div class="container1">
+        <div class="box1"></div>
+        <div class="box2"> </div>
+        <div class="circle"></div>
+    </div>
+    <br/>
+    <br/>
+
+    /* Transitions */
+    <div class="box3"></div>
+    <br/>
+    <br/>
+    
+    /* Transform */
+    <div class="container4">
+        <div class="box4">
+            <p id="firstpara">This is My Box!!   <!--For this styling is add in css page*--></p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

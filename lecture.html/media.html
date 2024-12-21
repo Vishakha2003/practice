@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vish{
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine ;
+            border: solid 2px black;
+        }
+        /*@media (min-width: 500px) {
+            .vish{
+                background-color:green;
+            }
+        }*/
+        @media(min-width:300px) and (max-width:500px){
+            .vish{
+                background-color: green;
+            }
+        }
+        .container{
+            height: 800px;
+            background-color: burlywood;
+            border: solid 2px black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid blueviolet;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+             
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+            
+        }
+        #box4{
+            background-color: brown;
+        }
+        @media (min-width:1040px) {
+            .container{
+                flex-direction: row;
+            }       
+        }
+        @media (max-width:1040px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        .container1{
+            border: 1px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            padding: 2px;
+            margin: 10px;
+        }
+        #boxleft{
+            background-color: chocolate;
+            border: 1px solid greenyellow;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+        #boxright{
+            background-color: cornflowerblue;
+            border: 1px solid rgb(255, 255, 255);
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        @media(max-width:640px){
+            .container1{
+                display: flex;
+                flex-direction:column;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="vish">
+        Helloo Guyss!!
+    </div>
+    <br/>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+    <br/>
+
+    <div class="container1">
+        <div id="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div id="boxright">
+            <img src="project-1287781_640.webp" alt="project">
+        </div>
+    </div>
+    <br/>
+    <br/>
+</body>
+</html>
